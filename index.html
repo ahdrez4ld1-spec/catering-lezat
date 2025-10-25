@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catering Online Lezat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍱 Catering Online Lezat</h1>
+    <p>Pesan makanan favoritmu secara online dengan mudah!</p>
+  </header>
+
+  <main>
+    <section class="menu">
+      <h2>Daftar Menu</h2>
+      <div class="menu-list" id="menuList"></div>
+    </section>
+
+    <section class="pesanan">
+      <h2>Form Pemesanan</h2>
+      <form id="orderForm">
+        <label>Nama Lengkap</label>
+        <input type="text" id="nama" required>
+
+        <label>Nomor Telepon</label>
+        <input type="text" id="telepon" required>
+
+        <label>Alamat Pengantaran</label>
+        <textarea id="alamat" rows="3" required></textarea>
+
+        <label>Waktu Pengantaran</label>
+        <input type="datetime-local" id="waktu" required>
+
+        <div class="total">Total: Rp <span id="totalHarga">0</span></div>
+        <button type="submit" class="btn-submit">Kirim Pesanan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Catering Online Lezat | Hubungi: 0812-3456-7890</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
